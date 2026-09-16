@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spellbound Legends</title>
 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main id="game">
+
+        <!-- Scene -->
+        <div id="scene">
+
+            <!-- Background image goes here -->
+            <img id="background" src="" alt="">
+
+            <!-- Characters can appear here later -->
+            <div id="characters"></div>
+
+            <!-- Story dialogue -->
+            <section id="dialogue" class="hidden">
+                <div id="speaker"></div>
+
+                <div id="dialogue-box">
+                    <p id="dialogue-text"></p>
+                    <button id="continue-button">Continue</button>
+                </div>
+            </section>
+
+            <!-- Player name screen -->
+            <section id="name-screen" class="hidden">
+                <div class="name-panel">
+                    <h1>What is your name?</h1>
+
+                    <input
+                        id="name-input"
+                        type="text"
+                        maxlength="20"
+                        autocomplete="off"
+                        placeholder="Enter your name"
+                    >
+
+                    <p id="name-error"></p>
+
+                    <button id="name-submit">Continue</button>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <script src="game.js"></script>
+
+</body>
+</html>
